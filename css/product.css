@@ -1,0 +1,248 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Varela Round', sans-serif;
+     box-sizing: border-box;
+ }
+ 
+ header {
+     height: 60px;
+     max-width: 100%;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+     background-color: white;
+     opacity: 1;
+     z-index: 3;
+     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+ }
+ 
+ .logo {
+     line-height: 60px;
+     margin-left: 40px;
+     display: inline-block;
+     cursor: pointer;
+     font-size: 30px;
+     font-weight: bold;
+     color: #313131;
+ }
+ 
+ .logo:hover {
+     color: #C10606;
+ }
+ 
+ .logo-s {
+     color: #C10606;
+     margin-left: 0px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .logo:hover .logo-s {
+     color: #313131;
+ }
+ 
+ .sign {
+     float: right;
+     line-height: 60px;
+     margin-right: 40px;
+     width: 100px;
+ }
+ 
+ .sign--here {
+     float: right;
+     line-height: 60px;
+     margin-right: 40px;
+     width: 100px;
+ }
+ 
+ .sign--cart {
+     float: right;
+     line-height: 60px;
+     margin-right: 40px;
+     width: 160px;
+ }
+ 
+ .sign--cart a {
+     color: #313131;
+     font-weight: bold;
+     text-decoration: none;
+ }
+ 
+ .sign--here a {
+     color: #313131;
+     font-weight: bold;
+     text-decoration: none;
+     padding-bottom: 18px;
+     border-bottom: solid #C10606 3px;
+ }
+ 
+ .sign a {
+     color: #313131;
+     font-weight: bold;
+     text-decoration: none;
+ }
+ 
+ .act {
+     border: 2px solid #313131;
+     border-radius: 50px;
+     padding: 6px 15px;
+ }
+ 
+ .sign a:hover {
+     color: #C10606;
+     border-color: #C10606;
+ }
+ 
+ .sign--here a:hover {
+     color: #C10606;
+     border-color: #C10606;
+ }
+ 
+ .contact {
+     position: fixed;
+     bottom: 30px;
+     right: -150px;
+     background-color: white;
+     color: #C10606;
+     padding: 10px;
+     border-radius: 15px 0px 0px 15px;
+     font-family: 'Varela Round', sans-serif;
+     font-weight: bold;
+     font-size: 20px;
+     z-index: 99;
+     transition: ease-in-out;
+     transition-duration: 1000ms;
+     cursor: pointer;
+     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+ }
+ 
+ .contact:hover {
+     transform: translateX(-150px);
+     transition: ease-in-out;
+     transition-duration: 1000ms;
+ }
+ 
+ .product {
+     background-color: gainsboro;
+     padding: 20px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .product .card {
+     background-color: whitesmoke;
+     border-radius: 5px;
+     text-align: center;
+     margin: 10px;
+     max-width: 18%;
+     height: auto;
+     box-shadow: 0px 10px 5px #b2bec3;
+ }
+ 
+ .card .title {
+     font-size: 15px;
+     font-weight: bold;
+     margin: 5px;
+ }
+ 
+ .card img {
+     max-width: 100%;
+     border-radius: 5px 5px 0 0;
+ }
+ 
+ .card .text {
+     text-align: left;
+     margin-left: 2em;
+     font-size: 13px;
+ }
+ 
+ .btn {
+     color: black;
+     background-color: whitesmoke;
+     width: 33px;
+     border-radius: 0px;
+     border-style: solid 0.1px black;
+     cursor: pointer;
+     padding: 5px;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ 
+ .buy {
+     display: flex;
+     flex-direction: row;
+     justify-content: center
+ }
+ 
+ .num {
+     background-color: whitesmoke;
+     width: 50px;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .insert {
+     color: #C10606;
+     /* background-color: #C10606; */
+     width: auto;
+     border-radius: 5px;
+     border-style: solid;
+     border-color: #C10606;
+     cursor: pointer;
+     padding: 5px;
+     font-size: 12px;
+     margin: 10px;
+     font-weight: bold;
+     width: 100%;
+ }
+ 
+ .insert:hover {
+     background-color: #C10606;
+     color: white;
+ }
+ 
+ .tag-name {
+     background-color: gainsboro;
+     text-align: center;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 60px;
+     color: #C10606;
+     padding-top: 30px;
+     font-weight: bold;
+ }
+ 
+ .product ul {
+     list-style: none;
+     transition-duration: 1s;
+ }
+ 
+ .dropdown li {
+     display: none;
+ }
+ 
+ .card:hover .dropdown li {
+     display: block;
+     transition-duration: 1s;
+ }
+ 
+ .nutrient {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+ }
+ 
+ .nutrient--info {
+     font-family: 'Varela Round', sans-serif;
+     padding: 0px 10px 0px 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }

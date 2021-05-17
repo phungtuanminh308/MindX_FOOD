@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | MindX FOOD</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="./home.html">
+            <div class="logo">MindX<span class="logo-s">FOOD</span></div>
+        </a>
+        <span class="sign--here" id="cart"><a class="act" href="./cart.html">GIỎ HÀNG | 0</a></span>
+        <span class="sign"><a href="./contact.html">LIÊN HỆ</a></span>
+        <span class="sign"><a href="product.html">SẢN PHẨM</a></span>
+        <span class="sign"><a href="./intro.html">GIỚI THIỆU</a></span>
+        <span class="sign"><a href="./home.html">TRANG CHỦ</a></span>
+    </header>
+
+    <!-- MỤC TIÊU ĐỀ -->
+    <div class="cart-page">
+
+        <table id="cart-page">
+            <tr>
+                <th>SẢN PHẨM</th>
+                <th>SỐ LƯỢNG</th>
+                <th>THÀNH TIỀN</th>
+            </tr>
+        </table>
+
+        <!-- TỔNG SỐ LƯỢNG -->
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td style="font-weight: bold;">ĐƠN GIÁ</td>
+                    <td id="subtotal">50,000 VND</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">THUẾ</td>
+                    <td id="tax">5,000 VND</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">PHÍ SHIP</td>
+                    <td id="shipping">30,000 VND</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; color: #C10606;">TỔNG CỘNG</td>
+                    <td style="color: #C10606; font-weight: bold;" id="totalMoney">85,000 VND</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="confirm" onclick="change()">XÁC NHẬN</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="infomation" id="book">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="lname">Email (nếu có):</label>
+            <input type="email" id="lname" name="lname"><br><br>
+            <input type="submit" value="ĐẶT HÀNG" class="booking" onclick="booking()">
+        </div>
+    </div>
+
+    <div class="contact">📞|0987.654.321</div>
+    <script src="./product/js/product.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/localStorage.js"></script>
+</body>
+
+</html>

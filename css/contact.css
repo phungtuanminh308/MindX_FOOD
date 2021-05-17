@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60px;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 3;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.logo:hover {
+    color: #C10606;
+}
+
+.logo-s {
+    color: #C10606;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo:hover .logo-s {
+    color: #313131;
+}
+
+.sign {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 100px;
+}
+
+.sign--here {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 100px;
+}
+
+.sign--cart {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 160px;
+}
+
+.sign--cart a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign--here a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 18px;
+    border-bottom: solid #C10606 3px;
+}
+
+.sign a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.act {
+    border: 2px solid #313131;
+    border-radius: 50px;
+    padding: 6px 15px;
+}
+
+.sign a:hover {
+    color: #C10606;
+    border-color: #C10606;
+}
+
+.sign--here a:hover {
+    color: #C10606;
+    border-color: #C10606;
+}
+
+.contact {
+    position: fixed;
+    bottom: 30px;
+    right: -150px;
+    background-color: white;
+    color: #C10606;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 99;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact:hover {
+    transform: translateX(-150px);
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+}
+
+.squareL {
+    width: 80vw;
+    height: 20vw;
+    background-color: #C10606;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.circleL {
+    background-color: #C10606;
+    clip-path: circle(50% at left 50%);
+    width: 20vw;
+    height: 20vw;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.circleL div {
+    padding-left: 50px;
+}
+
+.circleR div {
+    padding-left: 250px;
+}
+
+.squareR {
+    width: 80vw;
+    height: 20vw;
+    background-color: #C10606;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.circleR {
+    background-color: #C10606;
+    clip-path: circle(50% at right 50%);
+    width: 20vw;
+    height: 20vw;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.infomationL {
+    display: flex;
+    transform: translateX(-65%);
+    transition-duration: 3000ms;
+    /* padding: 50px 0; */
+}
+
+.infomationL:hover {
+    transform: translateX(0);
+    /* padding: 50px 0; */
+}
+
+.infomationR {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(65%);
+    transition-duration: 3000ms;
+    color: white;
+    /* padding: 50px 0; */
+}
+
+.infomationR:hover {
+    transform: translateX(0);
+    /* padding: 50px 0; */
+}
+
+.infomationL img {
+    max-height: 80%;
+    border-radius: 15px;
+    padding-right: 10%;
+}
+
+.infomationR img {
+    max-height: 80%;
+    border-radius: 15px;
+    padding-left: 10%;
+}
+
+.squareL div {
+    padding-left: 100px;
+}
+
+.squareR div {
+    padding-right: 100px;
+}
+
+.contact--us {
+    text-align: center;
+    font-size: 60px;
+    padding: 100px 0;
+    font-weight: bold;
+}
+
+body {
+    background-color: whitesmoke;
+}

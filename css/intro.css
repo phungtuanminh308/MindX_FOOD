@@ -1,0 +1,196 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Varela Round', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    header {
+        height: 60px;
+        max-width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: white;
+        opacity: 1;
+        z-index: 3;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .logo {
+        line-height: 60px;
+        margin-left: 40px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+        color: #313131;
+    }
+    
+    .logo:hover {
+        color: #C10606;
+    }
+    
+    .logo-s {
+        color: #C10606;
+        margin-left: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .logo:hover .logo-s {
+        color: #313131;
+    }
+    
+    .sign {
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        width: 100px;
+    }
+    
+    .sign--here {
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        width: 100px;
+    }
+    
+    .sign--cart {
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        width: 160px;
+    }
+    
+    .sign--cart a {
+        color: #313131;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .sign--here a {
+        color: #313131;
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 18px;
+        border-bottom: solid #C10606 3px;
+    }
+    
+    .sign a {
+        color: #313131;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .act {
+        border: 2px solid #313131;
+        border-radius: 50px;
+        padding: 6px 15px;
+    }
+    
+    .sign a:hover {
+        color: #C10606;
+        border-color: #C10606;
+    }
+    
+    .sign--here a:hover {
+        color: #C10606;
+        border-color: #C10606;
+    }
+    
+    .contact {
+        position: fixed;
+        bottom: 30px;
+        right: -150px;
+        background-color: white;
+        color: #C10606;
+        padding: 10px;
+        border-radius: 15px 0px 0px 15px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        z-index: 99;
+        transition: ease-in-out;
+        transition-duration: 1000ms;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .contact:hover {
+        transform: translateX(-150px);
+        transition: ease-in-out;
+        transition-duration: 1000ms;
+    }
+    
+    .intro {
+        max-width: 100vw;
+        height: auto;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .items {
+        display: flex;
+        max-width: 100vw;
+        height: 50vh;
+        align-items: center;
+        justify-items: center;
+        margin: 100px;
+    }
+    
+    .items--img {
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    }
+    
+    .items--head {
+        font-size: 50px;
+        font-weight: 900;
+        align-content: center;
+        margin-left: 200px;
+        margin-bottom: 20px;
+        color: #C10606;
+    }
+    
+    .items--content {
+        font-size: 20px;
+        margin: 0 100px 0 100px;
+    }
+    
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 75%;
+        background: #C10606;
+        clip-path: circle(60% at left 0%);
+        z-index: 1;
+        opacity: 0.75;
+    }
+    
+    .circle1 {
+        position: absolute;
+        top: calc(50vh + 200px);
+        right: 0;
+        width: 75%;
+        height: 75%;
+        background: #C10606;
+        clip-path: circle(60% at right 0%);
+        z-index: 1;
+        opacity: 0.75;
+    }

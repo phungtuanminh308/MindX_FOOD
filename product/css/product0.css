@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    opacity: 1;
+}
+
+.logo {
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.logo:hover {
+    color: #C10606;
+}
+
+.nutrient {
+    display: flex;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.nutrient--info {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-s {
+    color: #C10606;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo:hover .logo-s {
+    color: #313131;
+}
+
+.sign {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 100px;
+}
+
+.sign--here {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 100px;
+}
+
+.sign--cart {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    width: 160px;
+}
+
+.sign--cart a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign--here a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 18px;
+    border-bottom: solid #C10606 3px;
+}
+
+.sign a {
+    color: #313131;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.act {
+    border: 2px solid #313131;
+    border-radius: 50px;
+    padding: 6px 15px;
+}
+
+.sign a:hover {
+    color: #C10606;
+    border-color: #C10606;
+}
+
+.sign--here a:hover {
+    color: #C10606;
+    border-color: #C10606;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.myslider {
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    color: #C10606;
+}
+
+.next {
+    right: 0;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.contact {
+    position: fixed;
+    bottom: 30px;
+    right: -150px;
+    background-color: white;
+    color: #C10606;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 99;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact:hover {
+    transform: translateX(-150px);
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+}
+
+.active,
+.dot:hover {
+    border-color: #C10606;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.txt {
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 400px;
+    left: 285px;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+.txt--button {
+    width: 580px;
+    color: white;
+    background: #C10606;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: solid #C10606 3px;
+    margin: 40px;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/* .txt--button:hover {
+    color: #C10606;
+    background: white;
+} */
+
+@-webkit-keyframes posi {
+    from {
+        left: 18%;
+    }
+    to {
+        left: 15%;
+    }
+}
+
+@keyframes posi {
+    from {
+        left: 18%;
+    }
+    to {
+        left: 15%;
+    }
+}
+
+.txt h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 1.4em;
+    font-family: 'Rowdies', cursive;
+}
+
+.txt p {
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+img {
+    transform: scale((1.5, 1.5));
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoomin {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.ingredient {
+    padding-top: 30px;
+    font-size: 35px;
+    color: black;
+    z-index: 99;
+    height: 80vh;
+}
+
+.ingredient-title {
+    font-size: 48px;
+    text-align: center;
+    background-color: #C10606;
+    color: white;
+    font-weight: bold;
+    margin: 0 11vw 0 11vw;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 5px #b2bec3;
+}
+
+.ingredient-descript {
+    margin: 50px;
+    font-size: 45px;
+    text-align: center;
+    font-style: italic;
+}
+
+.circle {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    background: #C10606;
+    clip-path: circle(380px at left 0%);
+    z-index: 1;
+    opacity: 1;
+    color: white;
+    font-size: 60px;
+    text-align: left;
+}
+
+.circle div {
+    display: flex;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.ingredient-about {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: 30%;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.ingredient-about iframe {
+    margin: 100px 20px 0 0px
+}
+
+.ingredient-about table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.ingredient-about td {
+    padding: 10px 0 10px 30px;
+}
+
+.ingredient-about td:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.circle1 {
+    position: absolute;
+    right: 0;
+    top: calc(180vh + 320px);
+    width: 20%;
+    height: 20%;
+    background: #C10606;
+    clip-path: circle(380px at right 0%);
+    z-index: 1;
+    opacity: 1;
+    color: white;
+    font-size: 60px;
+    text-align: left;
+}
+
+.circle1 div {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 200px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.how2Cook {
+    padding-top: 30px;
+    font-size: 35px;
+    color: black;
+    z-index: 99;
+    height: auto;
+    margin-top: 300px;
+}
+
+.how2Cook table {
+    margin-left: 15%;
+    border-collapse: collapse;
+    width: 65%;
+}
+
+.how2Cook td {
+    padding: 5px 10px;
+    padding: 20px;
+}
+
+.how2Cook td:first-child {
+    text-align: right;
+    font-weight: bold;
+    border-right: #C10606 solid;
+    width: 200px;
+}
+
+.how2Cook td:last-child {
+    font-size: 30px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 150px;
+}
